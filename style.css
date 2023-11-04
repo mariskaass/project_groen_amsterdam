@@ -1,0 +1,13 @@
+@font-face {
+    font-family: okuba;
+    src: url(fonts/gomarice_okuba_cloud.ttf);
+}
+
+@font-face {
+    font-family: magic;
+    src: url(fonts/Super\ Magic.ttf);
+}
+
+h1 {
+    font-family: magic;
+}
