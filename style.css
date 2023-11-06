@@ -161,7 +161,6 @@ nav div:first-of-type {
     height: 252px;
     transform: rotate(9deg);
     margin-left: 10px;
-      
 }
 
 nav div:nth-child(2) {
@@ -183,32 +182,25 @@ nav div:last-of-type {
 
 /* how it works pagina */
 .how section {
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 80px 165px 205px;
+    margin-top: 25px;
 }
 
 .how div:first-of-type {
     background-image: url(fotos/one.png);
-    width: 318px;
-    height: 252px;
-    transform: rotate(9deg);
-    margin-left: 10px;
-      
+    width: 280px;
+    height: 189px;  
 }
 
 .how div:nth-child(2) {
     background-image: url(fotos/two.png);
-    width: 318px;
-    height: 252px;
-    transform: rotate(9deg);
-    margin-left: 10px;
-      
+    width: 298px;
+    height: 208px;
+    margin-left: 65px;     
 }
 
 .how div:last-of-type {
     background-image: url(fotos/three.png);
-    width: 318px;
-    height: 252px;
-    transform: rotate(9deg);
-    margin-left: 10px;
-      
+    width: 302px;
+    height: 205px;
 }
