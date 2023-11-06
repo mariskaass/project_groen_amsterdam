@@ -48,7 +48,7 @@ h1 {
     font-family: magic;
     color: #ff934f;
     float: right;
-    margin-right: 30px;
+    margin-right: 40px;
     font-size: 35px;
     font-weight: normal;
 }
@@ -72,6 +72,10 @@ h3 {
 header {
     height: 82px;
     text-align: center;
+}
+
+header img {
+    margin-top: 5px;
 }
 
 section {
