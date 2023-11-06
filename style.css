@@ -44,6 +44,7 @@ body {
     background-color: #BFCBC2;
 }
 
+/* de headers van alle paginas */
 h1 {
     font-family: magic;
     color: #ff934f;
@@ -53,8 +54,29 @@ h1 {
     font-weight: normal;
 }
 
+.about h1, .looks h1, .how h2 {
+    color: #0A7027;
+}
+
+.how h1 {
+    color: #ffffff;
+}
+
 h2 {
     font-family: magic;
+    font-size: 40px;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.looks h2 , .about h3{
+    color: #ff934f;
+}
+
+.about h2 {
+    float: right;
+    font-size: 35px;
+    padding-right: 5px;
 }
 
 h3 {
@@ -74,17 +96,45 @@ header {
     text-align: center;
 }
 
+.about header {
+    background-image: url(fotos/top.png);
+    height: 220px;
+}
+
+.how header {
+    background-image: url(fotos/how.png);
+    height: 193px;
+}
+
+.looks header {
+    background-image: url(fotos/round.png);
+    height: 183px;
+}
+
 header img {
     margin-top: 5px;
 }
 
-section {
+header a {
+    float: left;
+}
+
+.how header a {
+    margin-top: 20px;
+}
+
+.looks header a {
+    margin-top: 13px;
+}
+
+/* nav pagina */
+nav, section {
     display: grid;
     grid-template-columns: 375px;
     grid-template-rows: 170px 240px 175px;
 }
 
-a {
+nav a {
     font-family: magic;
     text-decoration: none;
     color: black;
@@ -93,19 +143,19 @@ a {
     padding: 30px;
 }
 
-div:first-of-type a {
+nav div:first-of-type a {
     transform: rotate(17deg);
     margin: 40px 75px 0 0;
     font-size: 35px;
 }
 
-div {
+nav div , section div {
     display: flex;
     align-items: center;
     justify-content: center;
 } 
 
-div:first-of-type {
+nav div:first-of-type {
     background-image: url(fotos/triangle.png);
     width: 318px;
     height: 252px;
@@ -114,7 +164,7 @@ div:first-of-type {
       
 }
 
-div:nth-child(2) {
+nav div:nth-child(2) {
     background-image: url(fotos/cloud.png);
     height: 260px;
     width: 333px;
@@ -122,11 +172,43 @@ div:nth-child(2) {
     transform: rotate(-12deg);
 }
 
-div:last-of-type {
+nav div:last-of-type {
     width: 290px;
     height: 160px;
     background-color: #C2E812;
     border-radius: 50%;
     transform: rotate(6deg);
     margin-left: 30px;
+}
+
+/* how it works pagina */
+.how section {
+    grid-template-rows: 100px 100px 100px;
+}
+
+.how div:first-of-type {
+    background-image: url(fotos/one.png);
+    width: 318px;
+    height: 252px;
+    transform: rotate(9deg);
+    margin-left: 10px;
+      
+}
+
+.how div:nth-child(2) {
+    background-image: url(fotos/two.png);
+    width: 318px;
+    height: 252px;
+    transform: rotate(9deg);
+    margin-left: 10px;
+      
+}
+
+.how div:last-of-type {
+    background-image: url(fotos/three.png);
+    width: 318px;
+    height: 252px;
+    transform: rotate(9deg);
+    margin-left: 10px;
+      
 }
