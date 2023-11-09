@@ -68,7 +68,7 @@ h2 {
     padding-right: 40px;
 }
 
-.looks h2 , .about h3{
+.looks h2 {
     color: #ff934f;
 }
 
@@ -78,7 +78,11 @@ h2 {
     padding-right: 5px;
 }
 
-h3 {
+.looks h2 {
+    padding-right: 25px;
+}
+
+main h3 {
     font-family: okuba;
     color: #0A7027;
     background-color: #C2E812;
@@ -88,6 +92,18 @@ h3 {
     margin-top: 25px;
     float: right;
     transform: rotate(8deg);
+}
+
+.about h3 {
+    font-family: okuba;
+    background-image: url(fotos/small_cloud.png);
+    width: 182px;
+    height: 113px;
+    font-size: 15px;
+    margin: 30px 0 0 195px;
+    transform: rotate(15deg);
+    font-size: 14px;
+    font-weight: normal;
 }
 
 header {
@@ -141,7 +157,7 @@ section {
     overflow: hidden;
 }
 
-/* nav pagina */
+/* NAV PAGINA */
 ul, section {
     display: grid;
     grid-template-columns: 375px;
@@ -194,9 +210,9 @@ nav li:last-of-type {
     margin-left: 30px;
 }
 
-/* how it works pagina */
+/* HOW IT WORKS PAGINA */
 .how section {
-    grid-template-rows: 16px 80px 165px 205px;
+    grid-template-rows: 16px 80px 165px 40px 165px;
     margin-top: 9px;
 }
 
@@ -246,26 +262,119 @@ nav li:last-of-type {
 }
 
 /* derde blokje */
-.how div:last-of-type {
+.how div:nth-child(4) {
     background-image: url(fotos/three.png);
     width: 302px;
     height: 205px;
+    flex-wrap: wrap;
+    display: flex;
 }
 
-.how div:last-of-type h4{
+.how div:nth-child(4) h4{
     transform: rotate(-29deg);
-    margin-top: 20px;
+    margin: 60px 0 0 20px;
     color: #BFCBC2;
+    height: fit-content;
 }
 
+/* kleur bolletjes */
+.how div:last-of-type {
+    width: 250px;
+    height: 200px;
+    transform: rotate(-29deg);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    margin-left: 20px;
+    text-align: center;
+}
 .how div:last-of-type p {
-    
-    background-color: red;
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin-left: 20px;
+    transform: rotate(29deg);
+}   
 
+.how div:last-of-type p:nth-child(1){
+    background-color: #ffe210;
+    margin-top: 25px;
 }
 
+.how div:last-of-type p:nth-child(2){
+    background-color: #37be12;
+    margin-top: 5px;
+}
 
+.how div:last-of-type p:nth-child(3){
+    background-color: #ca2a02;
+    margin-top: 15px;
+}
 
+.how div:last-of-type p:nth-child(4){
+    background-color: #ff8a21;
+    margin-left: 90px;
+    margin-bottom: 25px;
+}
+
+.how div:last-of-type p:nth-child(5){
+    background-color: #5882e6;
+    margin-top: 15px;
+}
+
+/* ABOUT STORE PAGINA */
+.about section {
+    grid-template-rows: 255px 0px 270px;
+    margin-top: -55px;
+    position: fixed;
+    z-index: -1;
+}
+
+.about div:first-of-type {
+    background-image: url(fotos/Asset\ 12.png);
+    height: 271px;
+    width: 359px;
+    color: #ffffff;
+}
+
+.about div a {
+    background-color: #BFCBC2;
+    padding: 6px 13px 6px 13px;
+    font-family: webS;
+    text-decoration: none;
+    color: black;
+    margin-left: 110px;
+}
+
+.about div:first-of-type p {
+    margin: 65px 0 20px 5px;
+}
+
+.about div:nth-child(2) img {
+    height: 184.25px;
+}
+
+.about div:last-of-type {
+    background-image: url(fotos/Asset\ 11.png);
+    height: 270px;
+    width: 320px;
+    margin-left: 55px;
+    z-index: -1;
+}
+
+.about div:last-of-type h4 {
+    transform: rotate(-20deg);
+    margin: 38px 0 0 59px;
+    font-size: 11px;
+}
+
+.about div:last-of-type p:first-of-type {
+    transform: rotate(-20deg);
+    margin: 15px 0 0 65px;
+}
+
+.about div:last-of-type p:last-of-type {
+    transform: rotate(-20deg);
+    text-align: center;
+    margin: 20px 0 0 70px;
+}
