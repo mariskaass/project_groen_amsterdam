@@ -104,6 +104,7 @@ main h3 {
     transform: rotate(15deg);
     font-size: 14px;
     font-weight: normal;
+    position: fixed;
 }
 
 header {
@@ -114,6 +115,8 @@ header {
 .about header {
     background-image: url(fotos/top.png);
     height: 220px;
+    z-index: 0;
+    position: relative;
 }
 
 .how header {
@@ -337,13 +340,15 @@ nav li:last-of-type {
     color: #ffffff;
 }
 
-.about div a {
+.about main a {
     background-color: #BFCBC2;
     padding: 6px 13px 6px 13px;
     font-family: webS;
     text-decoration: none;
     color: black;
-    margin-left: 110px;
+    margin: 150px 0 0 110px;
+    position: absolute;
+    z-index: 2;
 }
 
 .about div:first-of-type p {
