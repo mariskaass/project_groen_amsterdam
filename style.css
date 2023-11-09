@@ -333,6 +333,7 @@ nav li:last-of-type {
     z-index: -1;
 }
 
+/* eerste blokje */
 .about div:first-of-type {
     background-image: url(fotos/Asset\ 12.png);
     height: 271px;
@@ -355,10 +356,12 @@ nav li:last-of-type {
     margin: 65px 0 20px 5px;
 }
 
+/* tweede blokje/foto */
 .about div:nth-child(2) img {
     height: 184.25px;
 }
 
+/* derde blokje */
 .about div:last-of-type {
     background-image: url(fotos/Asset\ 11.png);
     height: 270px;
@@ -382,4 +385,39 @@ nav li:last-of-type {
     transform: rotate(-20deg);
     text-align: center;
     margin: 20px 0 0 70px;
+}
+
+/* GALLERY PAGINA */
+.looks section {
+    grid-template-rows: 0px 160px 55px 50px 142px;
+    position: fixed;
+    margin: -75px 0 0 -70px;
+    z-index: -1;
+    width: 450px;
+}
+
+.looks div {
+    height: fit-content;
+    width: fit-content;
+    transform: scale(0.5);
+}
+
+.looks div:nth-child(2) {
+    margin: -20px 0 0 184px
+}
+
+.looks div:nth-child(3) {
+    margin-left: 80px;
+}
+
+.looks div:nth-child(4) {
+    margin-left: 15px;
+}
+
+.looks div:nth-child(5) {
+    margin-left: 272px;
+}
+
+.looks div:last-of-type {
+    margin-left: 20px;
 }
